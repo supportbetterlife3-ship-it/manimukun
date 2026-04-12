@@ -1,0 +1,121 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-300: #f7c8bc;
+  --color-brand-400: #efb2a5;
+  --color-brand-500: #e7a99a;
+  --color-brand-600: #cf8b7a;
+}
+
+@layer base {
+  :root {
+    --brand-primary: #e7a99a;
+    --brand-light: #f7c8bc;
+    --brand: var(--brand-primary);
+    --accent-gradient: linear-gradient(135deg, #cf8b7a 0%, #efb2a5 100%);
+    --glass-light: rgba(255, 255, 255, 0.85);
+    --glass-dark: rgba(15, 15, 25, 0.9);
+    --border-light: rgba(0, 0, 0, 0.06);
+    --border-dark: rgba(255, 255, 255, 0.06);
+    --shadow-light: 0 6px 18px rgba(14, 22, 43, 0.06);
+    --shadow-dark: 0 6px 18px rgba(0, 0, 0, 0.3);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply rounded-xl p-4 backdrop-blur transition-all duration-300;
+    background-color: var(--glass-light);
+    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-light);
+  }
+
+  html.dark .glass-card {
+    background-color: var(--glass-dark);
+    border-color: var(--border-dark);
+    box-shadow: var(--shadow-dark);
+  }
+
+  .glass-card:hover {
+    @apply shadow-lg;
+    transform: translateY(-6px);
+  }
+
+  .site-nav-link {
+    @apply font-semibold transition-colors duration-200;
+  }
+
+  .site-nav-link:hover {
+    background-image: var(--accent-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .btn-accent {
+    @apply px-6 py-2 rounded-lg font-bold text-white transition-all duration-200 cursor-pointer inline-flex items-center justify-center;
+    background-image: var(--accent-gradient);
+  }
+
+  .btn-accent:hover {
+    @apply shadow-lg;
+    transform: translateY(-2px);
+  }
+
+  .text-accent {
+    color: var(--brand-primary);
+  }
+
+  html.dark .text-accent {
+    color: var(--brand-light);
+  }
+
+  .team-member-card {
+    @apply rounded-xl p-4 backdrop-blur transition-all duration-300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--glass-light);
+    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-light);
+  }
+
+  .team-member-card:hover {
+    @apply shadow-2xl;
+  }
+
+  .sheet-overlay {
+    @apply fixed inset-0 z-50;
+    pointer-events: none;
+  }
+
+  .sheet-overlay:not(.pointer-events-none) {
+    pointer-events: auto;
+  }
+
+  .sheet-panel {
+    @apply fixed top-0 right-0 h-full w-full max-w-[500px] z-51 overflow-y-auto bg-white dark:bg-slate-900;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 300ms ease-out;
+  }
+}
+
