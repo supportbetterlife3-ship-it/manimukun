@@ -91,8 +91,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="border-t border-slate-200 dark:border-slate-800 pt-8 text-center text-sm text-slate-700 dark:text-white space-y-1">
-                    <p className="font-medium">Built by <a href="https://linktr.ee/arjunpangeni" target="_blank" rel="noopener noreferrer" className="hover:text-brand-500 dark:hover:text-brand-400">Arjun pangeni</a></p>
+                <div className="border-t border-slate-200 dark:border-slate-800 pt-8 text-center text-sm text-slate-700 dark:text-white">
                     <p>&copy; {currentYear} Manimukundeshwor. All rights reserved.</p>
                 </div>
             </div>
