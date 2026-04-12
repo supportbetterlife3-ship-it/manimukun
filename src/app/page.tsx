@@ -72,7 +72,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-16">
             <div className="relative h-[260px] sm:h-[340px] md:h-[400px] rounded-xl sm:rounded-2xl overflow-hidden shadow-xl border border-slate-200 dark:border-slate-800">
               <Image
-                src="/khaireni.jfif"
+                src="/khaireni.webp"
                 alt="Landscape and community in the Khaireni area"
                 fill
                 className="object-cover"
