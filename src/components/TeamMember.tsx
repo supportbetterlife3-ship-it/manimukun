@@ -38,6 +38,9 @@ const TeamMember: React.FC<TeamMemberProps> = ({ member }) => {
         <p className="text-slate-600 dark:text-slate-300 text-sm font-medium">
           {role}
         </p>
+        <p className="text-xs text-slate-500 dark:text-slate-400">
+          Committee from 2020–
+        </p>
         {email ? (
           <a
             href={`mailto:${email}`}

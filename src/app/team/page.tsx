@@ -14,18 +14,20 @@ const teamMembers = [
     photo: '/menkeshar_koirala.png',
     email: 'menkeshar.koiirala@manimukundeshwor.org',
     phone: '9779846622662',
-  },
-  {
-    name: 'Puja Koirala',
+  },  {
+    name: 'Bimal Koirala',
     role: 'Vice President',
-    photo: '/puja_koirala.jfif',
-    email: 'puja.koirala@manimukundeshwor.org',
+    photo: '/bimal_koirala.png',
+    email: 'bimal.koirala@manimukundeshwor.org',
   },
   {
     name: 'Dhal Bahadur Chettri',
     role: 'Secretary',
     photo: '/Dhalbahadur_Chettri.jpg',
+    email: 'dhalbahadur.chettri@manimukundeshwor.org',
+
   },
+
   {
     name: 'Pramila Shrestha',
     role: 'Member',
