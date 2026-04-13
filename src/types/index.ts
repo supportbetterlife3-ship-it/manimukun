@@ -27,6 +27,8 @@ export type TeamMember = {
   role: string;
   photo?: string;
   photoUrl?: string;
+  email?: string;
+  phone?: string;
 };
 
 export type JobPosting = {

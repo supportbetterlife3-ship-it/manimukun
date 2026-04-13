@@ -12,11 +12,14 @@ const teamMembers = [
     name: 'Menkeshar Koirala',
     role: 'President',
     photo: '/menkeshar_koirala.png',
+    email: 'menkeshar.koiirala@manimukundeshwor.org',
+    phone: '9779846622662',
   },
   {
     name: 'Puja Koirala',
     role: 'Vice President',
     photo: '/puja_koirala.jfif',
+    email: 'puja.koirala@manimukundeshwor.org',
   },
   {
     name: 'Dhal Bahadur Chettri',
@@ -27,16 +30,19 @@ const teamMembers = [
     name: 'Pramila Shrestha',
     role: 'Member',
     photo: '/Pramilashresthe.jpg',
+    email: 'pramila.shrestha@manimukundeshwor.org',
   },
   {
     name: 'Ram BK',
     role: 'Member',
     photo: '/Ram_bk.jpg',
+    email: 'ram.bk@manimukundeshwor.org',
   },
   {
     name: 'Ramesh Giri',
     role: 'Member',
     photo: '/Ramesh_giri.jpg',
+    email: 'rameshgiri@manimukundeshwor.org',
   },
 ];
 
