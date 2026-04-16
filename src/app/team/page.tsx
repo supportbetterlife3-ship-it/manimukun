@@ -9,22 +9,22 @@ export const metadata = {
 
 const teamMembers = [
   {
-    name: 'Menkeshar Koirala',
+    name: 'Ramesh Thapa',
     role: 'President',
     photo: '/menkeshar_koirala.png',
-    email: 'menkeshar.koiirala@manimukundeshwor.org',
-    phone: '9779846622662',
+    email: 'Ramesh.thapa@manimukundeshwor.org',
+    phone: '9779848797691',
   },  {
-    name: 'Bimal Koirala',
+    name: 'Rajesh Hamal',
     role: 'Vice President',
-    photo: '/bimal_koirala.png',
-    email: 'bimal.koirala@manimukundeshwor.org',
+    photo: '/Ram_bk.jpg',
+    email: 'Rajesh hamal@manimukundeshwor.org',
   },
   {
-    name: 'Dhal Bahadur Chettri',
+    name: 'Dhan Bahadur Chettri',
     role: 'Secretary',
-    photo: '/Dhalbahadur_Chettri.jpg',
-    email: 'dhalbahadur.chettri@manimukundeshwor.org',
+    photo: '/Ram_bk.jpg',
+    email: 'dhanbahadur.chettri@manimukundeshwor.org',
 
   },
 
