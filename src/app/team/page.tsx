@@ -11,7 +11,7 @@ const teamMembers = [
   {
     name: 'Ramesh Thapa',
     role: 'President',
-    photo: '/menkeshar_koirala.png',
+    photo: '/Ram_bk.jpg',
     email: 'Ramesh.thapa@manimukundeshwor.org',
     phone: '9779848797691',
   },  {
